@@ -1,0 +1,103 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun May 28 20:16:01 2023
+| Host         : Sunstan running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_design_control_sets_placed.rpt
+| Design       : top_design
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    25 |
+|    Minimum number of control sets                        |    25 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   113 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    25 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     7 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              88 |           58 |
+| No           | No                    | Yes                    |               4 |            1 |
+| No           | Yes                   | No                     |              36 |           13 |
+| Yes          | No                    | No                     |              92 |           22 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              99 |           27 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+---------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|              Clock Signal             |                Enable Signal                |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------+---------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  clkb_BUFG                            |                                             | rgb_control/Hsync0                           |                1 |              1 |         1.00 |
+|  clk100_IBUF_BUFG                     |                                             |                                              |                1 |              1 |         1.00 |
+|  clk_BUFG                             |                                             | camera_control/i2c_drive/sioc_i_1_n_0        |                1 |              1 |         1.00 |
+|  pclk_IBUF_BUFG                       |                                             |                                              |                1 |              2 |         2.00 |
+|  sound/u2/FullSpkS                    |                                             |                                              |                1 |              2 |         2.00 |
+|  clk_12_reg_n_0                       |                                             | sound/u2/GenSpkS.Count11[10]_i_2_n_0         |                1 |              4 |         4.00 |
+|  clk_BUFG                             | camera_control/i2c_drive/taken              | btn_debounce/o                               |                3 |              8 |         2.67 |
+|  clk_BUFG                             | camera_control/i2c_drive/divider[7]_i_1_n_0 |                                              |                2 |              8 |         4.00 |
+|  clk_BUFG                             |                                             |                                              |                6 |              9 |         1.50 |
+|  clkb_BUFG                            |                                             | rgb_control/eqOp                             |                5 |             10 |         2.00 |
+|  clkb_BUFG                            | rgb_control/x[9]_i_1_n_0                    |                                              |                2 |             10 |         5.00 |
+|  clkb_BUFG                            | rgb_control/y[9]_i_1_n_0                    |                                              |                2 |             10 |         5.00 |
+|  clkb_BUFG                            | rgb_control/eqOp                            | rgb_control/Vcnt                             |                3 |             10 |         3.33 |
+| ~pclk_IBUF_BUFG                       |                                             |                                              |                8 |             10 |         1.25 |
+|  sound/u1/Tone_reg[10]_i_2_n_0        |                                             |                                              |                6 |             10 |         1.67 |
+|  clk_BUFG                             | camera_control/i2c_drive/busy_sr0           | camera_control/i2c_drive/data_sr[30]_i_1_n_0 |                3 |             11 |         3.67 |
+|  sound/u2/GenSpkS.Count11[10]_i_2_n_0 |                                             |                                              |                5 |             12 |         2.40 |
+|  pclk_IBUF_BUFG                       | image_capture/latched_href                  |                                              |                5 |             15 |         3.00 |
+|  clkb_BUFG                            | rgb_control/addra_reg2[0]_i_2_n_0           | rgb_control/addra_reg2[0]_i_1_n_0            |                4 |             16 |         4.00 |
+|  clkb_BUFG                            | rgb_control/area1                           | rgb_control/addra_reg1[0]_i_1_n_0            |                4 |             16 |         4.00 |
+|  clkb_BUFG                            | Camera_Adress/val                           | rgb_control/Vsync_reg_0                      |                5 |             19 |         3.80 |
+|  pclk_IBUF_BUFG                       | image_capture/wea                           | image_capture/latched_vsync                  |                5 |             19 |         3.80 |
+|  clk_BUFG                             |                                             | btn_debounce/clear                           |                6 |             24 |         4.00 |
+|  clkb_BUFG                            |                                             |                                              |               30 |             42 |         1.40 |
+|  clk_BUFG                             | camera_control/i2c_drive/busy_sr0           |                                              |               11 |             49 |         4.45 |
++---------------------------------------+---------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+
+

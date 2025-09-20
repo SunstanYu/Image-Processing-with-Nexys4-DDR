@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May 28 20:14:46 2023
+# Process ID: 27572
+# Current directory: E:/Code/VHDL/image_processing/image_processing.runs/synth_1
+# Command line: vivado.exe -log top_design.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design.tcl
+# Log file: E:/Code/VHDL/image_processing/image_processing.runs/synth_1/top_design.vds
+# Journal file: E:/Code/VHDL/image_processing/image_processing.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_design.tcl -notrace

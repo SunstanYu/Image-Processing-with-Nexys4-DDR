@@ -1,0 +1,8 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 852c5446aa8445ac99c571ea7a0a039f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_design_behav xil_defaultlib.top_design xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3290] entity port 'index' does not match with type std_logic_vector of component port [E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/audio.vhd:10]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

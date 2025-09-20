@@ -1,0 +1,20 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/Code/VHDL/image_processing/image_processing.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1685242071,verilog,,E:/Code/VHDL/project_ov7670_nexys2/project_ov7670_nexys2.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,blk_mem_gen_1,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/Speakera.vhd,1685206673,vhdl,,,,speakera,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/ToneTaba.vhd,1685206629,vhdl,,,,tonetaba,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/address_generator.vhd,1685248901,vhdl,,,,adress_generator,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/audio.vhd,1685206782,vhdl,,,,audio,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/camera_controller.vhd,1685279391,vhdl,,,,camera_controller,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/camera_regesiter.vhd,1685279376,vhdl,,,,camera_register,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/debounce.vhd,1685107134,vhdl,,,,debounce,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/i2c_sender.vhd,1685279509,vhdl,,,,i2c_driver,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/image_capture.vhd,1685637183,vhdl,,,,camera_capture,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/processing.vhd,1685275994,vhdl,,,,processing,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/rgb_generator.vhd,1685276076,vhdl,,,,rgb_generator,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/top_design.vhd,1685266914,vhdl,,,,top_design,,,,,,,,
+E:/Code/VHDL/image_processing/image_processing.srcs/sources_1/new/vga_controller.vhd,1685252762,vhdl,,,,rgb_controller,,,,,,,,
+E:/Code/VHDL/project_ov7670_nexys2/project_ov7670_nexys2.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1684948841,verilog,,,,blk_mem_gen_0,,,,,,,,
